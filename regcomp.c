@@ -23891,8 +23891,8 @@ S_parse_uniprop_string(pTHX_
                     goto append_name_to_msg;
                 }
 
-                Perl_ck_warner_d(aTHX_
-                    packWARN(WARN_EXPERIMENTAL__UNIPROP_WILDCARDS),
+                ckWARNexperimental(RExC_parse,
+                    WARN_EXPERIMENTAL__UNIPROP_WILDCARDS,
                     "The Unicode property wildcards feature is experimental");
 
                 if (special_property) {
@@ -24970,7 +24970,9 @@ S_parse_uniprop_string(pTHX_
                 _invlist_union(prop_definition, pu_invlist,
                                &expanded_prop_definition);
                 prop_definition = expanded_prop_definition;
-                Perl_ck_warner_d(aTHX_ packWARN(WARN_EXPERIMENTAL__PRIVATE_USE), "The private_use feature is experimental");
+                ckWARNexperimental(RExC_parse,
+                    WARN_EXPERIMENTAL__PRIVATE_USE,
+                    "The private_use feature is experimental");
             }
         }
     }
