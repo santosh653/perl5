@@ -137,6 +137,7 @@ POD = perl.pod	\
 	perlopentut.pod	\
 	perlpacktut.pod	\
 	perlperf.pod	\
+	perlphonypod.pod	\
 	perlpod.pod	\
 	perlpodspec.pod	\
 	perlpodstyle.pod	\
@@ -303,6 +304,7 @@ MAN = perl.man	\
 	perlopentut.man	\
 	perlpacktut.man	\
 	perlperf.man	\
+	perlphonypod.man	\
 	perlpod.man	\
 	perlpodspec.man	\
 	perlpodstyle.man	\
@@ -469,6 +471,7 @@ HTML = perl.html	\
 	perlopentut.html	\
 	perlpacktut.html	\
 	perlperf.html	\
+	perlphonypod.html	\
 	perlpod.html	\
 	perlpodspec.html	\
 	perlpodstyle.html	\
@@ -635,6 +638,7 @@ TEX = perl.tex	\
 	perlopentut.tex	\
 	perlpacktut.tex	\
 	perlperf.tex	\
+	perlphonypod.tex	\
 	perlpod.tex	\
 	perlpodspec.tex	\
 	perlpodstyle.tex	\
